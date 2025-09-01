@@ -1,0 +1,4 @@
+{
+  "verification_type": "coupled_stream",
+  "stream_params": { "kappa1": 0.6, "kappa2": 0.7, "eta1": 0.1, "eta2": 0.08 }
+}

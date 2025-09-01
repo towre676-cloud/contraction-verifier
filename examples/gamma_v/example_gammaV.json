@@ -1,0 +1,11 @@
+{
+  "verification_type": "core_banach",
+  "alpha": 0.95,
+  "beta": 1.0,
+  "sigma": 2.0,
+  "delta_tau_min": 0.2,
+  "c_P": 1.0,
+  "core_params": { "gamma": 0.20, "t": 0.02 },
+  "Gamma_matrix": [[0.2, 0.0], [0.0, 0.1]],
+  "R_matrix":     [[1.0, 0.0], [0.0, 0.6]]
+}
