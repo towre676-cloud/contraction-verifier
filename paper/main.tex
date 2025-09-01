@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\title{Contraction Verification: Core, Discrete Ledgers, and Coupled Streams}
+\author{Cody}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section{Setup}
+Let $(X,\|\cdot\|)$ be a Banach space with weighted norm and optional Hölder seminorm. Consider
+$T = A \circ R \circ \Gamma \circ S_t$ with bounded linear operators.
+
+\section{Core Condition}
+If $\mathrm{Lip}(T) \le \gamma(1 + t c_P) \le 1 - \varepsilon$ with $\varepsilon > 0$, then $T$ is a contraction and has a unique fixed point.
+
+\section{Discrete Ledger}
+For steps $k$ with $(\gamma_k,t_k,\Delta\tau_k)$ the sufficient condition is
+$\gamma_k (1 + t_k c_P) e^{-\sigma \Delta\tau_k} \le 1 - \varepsilon$ for all $k$.
+
+\section{Coupled Streams}
+Let $L \in \mathbb{R}^{n\times n}$ with $L_{ii}=1-\kappa_i$ and $L_{ij}=\eta_{ij}$ for $i\ne j$.
+If $\rho(L) < 1$ then the coupled map is a contraction.
+
+\section{Sharpened Bound via Projection}
+If $R$ is an orthogonal projector and $\Gamma$ a bounded operator, one may replace $\|\Gamma\|$ with $\|R\Gamma\|_2$ (denoted $\gamma_V$).
+
+\section{Witness}
+We take $\varepsilon = \alpha^\beta e^{-\sigma \Delta\tau_{\min}}$ or provide a manual override. Interval arithmetic and outward rounding yield numerically verified checks.
+
+\end{document}
